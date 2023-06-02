@@ -1,0 +1,182 @@
+* {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    color: rgb(44, 44, 57);
+}
+
+body {
+    background-color: rgb(244, 246, 249);
+}
+
+/*  */
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+/* siderbar */
+.sidebar {
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    height: 100%;
+    width: 300px;
+    background-color: white;
+}
+
+.sidebar-header {
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    border-bottom-color: rgb(243, 243, 243);
+    background-color: white;
+    border-bottom-style: solid;
+    font-size: 25px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    margin-right: 1rem;
+    color: rgb(38, 197, 210);
+    cursor: pointer;
+}
+
+
+.sidebar-header i {
+    padding: 1.2rem;
+    text-align: center;
+    color: rgb(38, 197, 210);
+    font-size: 20px;
+
+}
+
+.sidebar-header i span {
+    margin-left: 10px;
+    color: rgb(38, 197, 210);
+}
+
+
+.user-profil {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 33%;
+    margin-top: 40px;
+}
+
+h2,
+h3 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.siderbar-menu-icon {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.siderbar-menu-icon i {
+    margin: 0.5rem;
+}
+
+i:hover,
+a:hover {
+    color: rgb(38, 197, 210);
+}
+
+i,
+span {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+ul {
+    margin-left: 1rem;
+}
+
+a {
+    font-size: 17px;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+h4 {
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 12px;
+}
+
+.main{
+    margin-left: 300px;
+    width: calc(100% - 300px);
+}
+
+header{
+    background-color: rgb(38, 197, 210);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div:first-child{
+    width: 60%;
+}
+
+header label{
+    color: white;
+    font-size: 20px;
+    margin-left: 1rem;
+}
+
+#text{
+    border-radius: 4px;
+    height: 30px;
+    border: none;
+    width: 50%;
+}
+
+header i{
+    color: white;
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+header i span{
+    color: rgb(204, 58, 58);
+    font-size: 10px;
+}
+
+header div:last-child{
+    margin-right: 2rem;
+}
+
+/*  */
+@media only screen and (max-width: 600px)  {
+    .sidebar{
+       display: none;
+    }
+
+    .main{
+        margin-left: 0px;
+        width: 100%;
+    }
+
+}
